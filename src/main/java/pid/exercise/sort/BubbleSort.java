@@ -13,7 +13,12 @@ public class BubbleSort {
         // Step 1. enter the loop
         // Step 2. compare indexes
 
+        // the bubble sort has a check that stops from iterating if all is already sorted
+
+        // decrease 1 because the last one is already sorted
         for (i = 0; i < a - 1; i++) {
+            // decrease 1 because the last one is already sorted
+            // the inner loop is reduced every time
             for (j = 0; j < a - i - 1; j++)
                 if (array[j] > array[j + 1]) {
                     // swap arr[j+1] and arr[j]
@@ -24,6 +29,12 @@ public class BubbleSort {
         }
     }
 }
+
+
+
+
+
+
 
 
 /*

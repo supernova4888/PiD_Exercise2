@@ -2,6 +2,8 @@ package pid.exercise.sort;
 
 public class SelectionSort {
 
+    // usually Selection 
+
     public static void sort(int[] array) {
         // TODO Implement selection sort
         // TIP: start the smallest iteration first and then go broader
@@ -30,6 +32,7 @@ public class SelectionSort {
                         // in this case 6 is > than 4 , so we dont do this. Go to 'else'.
                     min = j;
                 }
+                // swap needs a third element, because if we just swap both, then we lose one of the values.
                 // store x = value of 4
                 x = array[i];
                 // set 4 = 4 // data of i == data of min
